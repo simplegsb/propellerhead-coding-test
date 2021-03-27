@@ -4,6 +4,10 @@
 
 This project is written in **Node.js**. It is an **Express.js** HTTP server providing RESTful web services.
 
+I spent about 2.5hrs creating this solution. To be honest I took an existing larger solution that I had coded for a
+meditation center and adapted / cut out un-needed features. The original solution had been coded be me only. If I had
+more time I would have implemented security but I decided that it would be simpler to remove this feature.
+
 ## Development
 
 ### Code
