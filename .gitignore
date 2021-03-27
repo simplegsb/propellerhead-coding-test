@@ -1,0 +1,8 @@
+# JetBrains
+.idea
+
+# NPM
+node_modules
+
+# Build
+dist

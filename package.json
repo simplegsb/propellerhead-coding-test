@@ -1,0 +1,38 @@
+{
+  "name": "propellerhead",
+  "version": "0.0.1",
+  "description": "Propellerhead Coding Test",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint --project tsconfig.json --config tslint.json 'src/**/*.ts'",
+    "migrate": "sequelize db:migrate --url $(jq --raw-output '.databases.default' assets/config/${PROPELLERHEAD_ENV-'dev'}.json)",
+    "migrate:undo": "sequelize db:migrate:undo --url $(jq --raw-output '.databases.default' assets/config/${PROPELLERHEAD_ENV-'dev'}.json)",
+    "seed:test-data": "sequelize db:seed --seed test-data --url $(jq --raw-output '.databases.default' assets/config/${PROPELLERHEAD_ENV-'dev'}.json)"
+  },
+  "dependencies": {
+    "async-exit-hook": "^1.1.1",
+    "body-parser": "^1.15.2",
+    "compression": "^1.7.3",
+    "crypto": "0.0.3",
+    "express": "^4.14.0",
+    "express-async-errors": "^3.1.1",
+    "express-graceful-exit": "^0.3.3",
+    "express-prettify": "^0.1.1",
+    "moment": "^2.17.1",
+    "mysql2": "^1.6.1",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.21.6",
+    "swagger-ui-dist": "^3.19.3",
+    "uuid": "^2.0.3",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/node": "^13.11.1",
+    "@types/uuid": "^3.4.3",
+    "sequelize-cli": "^5.5.1",
+    "tslint": "~5.11.0",
+    "typescript": "^3.8.3"
+  }
+}

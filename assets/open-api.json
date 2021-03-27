@@ -1,0 +1,22 @@
+{
+  "openapi": "3.0.0",
+  "info":
+  {
+    "title": "Propellerhead API",
+    "contact":
+    {
+      "name": "Prem Gyan",
+      "email": "gyan@intectum.nz"
+    }
+  },
+  "components":
+  {
+    "responses":
+    {
+      "400":
+      {
+        "description": "Bad request"
+      }
+    }
+  }
+}
