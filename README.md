@@ -30,7 +30,7 @@ Run `npm build`
 
 ### Start the API
 
-Run `node lib/api/index`
+Run `node dist/lib/api/index`
 
 ## Implementation Details
 
